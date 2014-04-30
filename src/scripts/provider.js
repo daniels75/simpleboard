@@ -31,7 +31,7 @@
  * 
  * The dashboardProvider can be used to register structures and widgets.
  */
-angular.module('adf.provider', [])
+angular.module('adf.provider', ['myModule'])
   .provider('dashboard', function(){
 
     var widgets = {};
@@ -129,6 +129,7 @@ angular.module('adf.provider', [])
 
 
     this.myconfig = function(name, structure){
+        //helloWorld.sayHello();
       myconfigs[name] = myconfigs;
       return this;
     };

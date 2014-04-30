@@ -41,9 +41,12 @@ angular.module('sample', [
   });
   
 })
-.controller('navigationCtrl', function($scope, $location){
+.controller('navigationCtrl', function($scope, $location, helloWorld){
   
   $scope.navCollapsed = true;
+  
+
+  console.log(">> from provider: " + helloWorld.sayHello());
   
   $scope.toggleNav = function(){
     $scope.navCollapsed = !$scope.navCollapsed;
