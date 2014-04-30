@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myconfig', ['adf'])
+angular.module('sample', [])
 .config(function(dashboardProvider){
   
   dashboardProvider

@@ -24,9 +24,9 @@
 'use strict';
 
 angular.module('sample', [
-  'adf', 
+  'adf', 'myModule',
   'sample.widgets.weather', 
-  'sample.widgets.linklist',  
+  'sample.widgets.linklist',  'myconfig',
   'LocalStorageModule', 'structures', 'sample-01', 'ngRoute'
 ])
 .config(function($routeProvider, localStorageServiceProvider){

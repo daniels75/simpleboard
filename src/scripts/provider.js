@@ -36,6 +36,7 @@ angular.module('adf.provider', [])
 
     var widgets = {};
     var structures = {};
+    var myconfigs = {};
     var messageTemplate = '<div class="alert alert-danger">{}</div>';
     var loadingTemplate = '\
       <div class="progress progress-striped active">\n\
@@ -125,6 +126,12 @@ angular.module('adf.provider', [])
       structures[name] = structure;
       return this;
     };
+
+
+    this.myconfig = function(name, structure){
+      myconfigs[name] = myconfigs;
+      return this;
+    };
     
    /**
     * @ngdoc method
@@ -174,6 +181,7 @@ angular.module('adf.provider', [])
       return {
         widgets: widgets,
         structures: structures,
+        myconfigs: myconfigs,
         messageTemplate: messageTemplate,
         loadingTemplate: loadingTemplate
       };
